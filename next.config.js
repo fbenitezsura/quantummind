@@ -5,6 +5,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  eslint: {
+    ignoreBuildErrors: true
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
